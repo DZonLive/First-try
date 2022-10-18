@@ -1,14 +1,18 @@
 while True:
     try:
-        x = int(input("Please enter a first number: "))
+        x = float(input("Please enter a first number: "))
     except ValueError:
         print("Oops!  That was no valid number.  Try again...")
+        break
+
     try:
-        y = int(input("Please enter a second number: "))
+        y = float(input("Please enter a second number: "))
     except ValueError:
         print("Oops!  That was no valid number.  Try again...")
+        break
+
     try:
-        result = x / y
+        division = float(x / y)
+        print(division)
     except ZeroDivisionError:
         print("It is not necessary to divide by zero xD")
-        result = 0
