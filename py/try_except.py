@@ -13,6 +13,8 @@ while True:
 
     try:
         division = float(x / y)
-        print(division)
+        print("The quotient of your numbers: " + str(division))
+        break
     except ZeroDivisionError:
         print("It is not necessary to divide by zero xD")
+        break
