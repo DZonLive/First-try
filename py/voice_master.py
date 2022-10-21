@@ -1,10 +1,15 @@
-import speech_recognition as sr
-import os
-import sys
-import webbrowser
+import pyttsx3 
+engine = pyttsx3.init()
 
-def talk(words):
-    print(words)
-    os.system("say " + words)
+def speak(input_data):
+    engine.say(input_data)
+    engine.runAndWait()
+    engine.stop()
 
-talk("Привет, спроси у меня что-либо")
+def text_to_speech():
+    text = input('Введите текст: ')
+    if text:
+        speak(text)
+
+while True:
+    text_to_speech()
