@@ -13,8 +13,8 @@ class Handler(FileSystemEventHandler):
                 os.rename(file, new_path)
 
 
-folder_track = 'C:\Users\Пользователь\Desktop\test watchdog'
-folder_test = 'C:\Users\Пользователь\Desktop'
+folder_track = r'C:\Users\Пользователь\Desktop'
+folder_dest = r'C:\Users\Пользователь\Desktop\Photos'
 
 handle = Handler()
 observer = Observer()
