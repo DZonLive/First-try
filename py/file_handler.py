@@ -10,7 +10,7 @@ class Handler(FileSystemEventHandler):
             if len(extension) > 1 and (extension[1].lower() == "jpg" or extension[1].lower() == "png" or extension[1].lower() == "svg"):
                 file = folder_track + "/" + filename
                 new_path = folder_dest + "/" + filename
-                os.rename(file, new_path)s
+                os.rename(file, new_path)
 
 
 folder_track = '/Users/Пользователь/Desktop/test watchdog'
